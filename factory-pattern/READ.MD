@@ -1,5 +1,11 @@
 1、简单工厂模式
+   
+   工厂生产所有的具体产品。如SimpleCarFactory的getCar方法
     
+   具体产品继承抽象产品。如BMW、Benz、Volkswagen 实现Car
+   
+   产品使用者，调用工厂。如SimpleCarFactory simpleCarFactory = new SimpleCarFactory();
+   
 
 2、工厂方法模式
     
