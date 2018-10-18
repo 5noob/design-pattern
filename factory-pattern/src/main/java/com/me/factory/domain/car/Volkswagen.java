@@ -1,4 +1,4 @@
-package com.me.factory.domain;
+package com.me.factory.domain.car;
 
 /**
  * @author OuyangJie

@@ -1,9 +1,9 @@
 package com.me.factory.simple;
 
-import com.me.factory.domain.BMW;
-import com.me.factory.domain.Benz;
-import com.me.factory.domain.Car;
-import com.me.factory.domain.Volkswagen;
+import com.me.factory.domain.car.BMW;
+import com.me.factory.domain.car.Benz;
+import com.me.factory.domain.car.Car;
+import com.me.factory.domain.car.Volkswagen;
 
 /**
  * @author OuyangJie

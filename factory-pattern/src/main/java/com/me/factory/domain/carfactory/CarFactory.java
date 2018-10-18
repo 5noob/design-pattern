@@ -1,6 +1,6 @@
-package com.me.factory.function;
+package com.me.factory.domain.carfactory;
 
-import com.me.factory.domain.Car;
+import com.me.factory.domain.car.Car;
 
 /**
  * @author OuyangJie

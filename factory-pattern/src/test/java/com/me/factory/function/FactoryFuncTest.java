@@ -1,8 +1,8 @@
-package com.me.factory.simple;
+package com.me.factory.function;
 
-import com.me.factory.domain.Car;
-import com.me.factory.function.BMWFactory;
-import com.me.factory.function.CarFactory;
+import com.me.factory.domain.car.Car;
+import com.me.factory.domain.carfactory.BMWCarFactory;
+import com.me.factory.domain.carfactory.CarFactory;
 import org.junit.Test;
 
 /**
@@ -13,7 +13,7 @@ import org.junit.Test;
 public class FactoryFuncTest {
     @Test
     public void getCar(){
-        CarFactory carFactory = new BMWFactory();
+        CarFactory carFactory = new BMWCarFactory();
         Car car = carFactory.getCar();
         System.out.println(car.getName());
     }

@@ -1,9 +1,7 @@
 package com.me.factory.simple;
 
-import com.me.factory.domain.Car;
+import com.me.factory.domain.car.Car;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @author OuyangJie
