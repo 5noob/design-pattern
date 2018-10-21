@@ -2,13 +2,13 @@
     通过代理对象，间接控制并访问目标对象的方法。如媒婆、中介、spring中的AOP
 
 静态代理：
-    目标对象和代理对象，实现同样的接口。如Agent和Zhangsan都实现Person接口
+   目标对象和代理对象，实现同样的接口。如Agent和Zhangsan都实现Person接口
 
-    目标对象作为代理对象的一个属性
+   目标对象作为代理对象的一个属性
 
-    通过代理对象的方法，访问目标对象的方法。如Agent的findJob()方法和findHouse()方法
+   通过代理对象的方法，访问目标对象的方法。如Agent的findJob()方法和findHouse()方法
 
-    缺点：每多一个目标对象，就要多一个代理对象。
+   缺点：每多一个目标对象，就要多一个代理对象。
 
 
 动态代理：
@@ -16,6 +16,7 @@
 
    DynamicHandler类中的Proxy.newProxyInstance(...)方法，是用来生成代理对象的，我们点进去看下。
 其中这一句，是用来生成代理对象的。
+        
         /*
          * Look up or generate the designated proxy class.
          */
@@ -25,7 +26,8 @@
    我们再来看看生成的类文件，是什么样子的。由于类文件时缓存在java虚拟机中，我们将类文件打印到文件中，便于查看。
 方法见ProxyTest类的generateProxyFile()方法。下面是生成的类文件，反编译的结果，为了好看，我调整了一下他的方法的位置。
 
-   public final class $Proxy0 extends Proxy implements Person {
+   
+    public final class $Proxy0 extends Proxy implements Person {
        private static Method m1;
        private static Method m4;
        private static Method m2;
@@ -107,7 +109,7 @@
                       throw new UndeclaredThrowableException(var4);
                   }
               }
- }
+    }
 
 
 
