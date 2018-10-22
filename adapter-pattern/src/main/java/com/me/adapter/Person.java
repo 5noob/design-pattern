@@ -7,8 +7,8 @@ package com.me.adapter;
  */
 public class Person {
     public static void main(String[] args) {
-        Adapter adapter = new Adapter(new Usb());
-        TypeC typeC = new TypeC(adapter);
+        TypeC typeC = new Adapter(new Usb());
+        System.out.println("使用TypeC充电");
         typeC.charge();
     }
 }
