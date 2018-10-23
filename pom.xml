@@ -19,6 +19,7 @@
         <module>template-pattern</module>
         <module>delegate-pattern</module>
         <module>adapter-pattern</module>
+        <module>decorator-pattern</module>
     </modules>
 
     <properties>
