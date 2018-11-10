@@ -58,7 +58,7 @@
 
        /**
         * 代理对象$Proxy0的findHouse()方法，其实是给调用了h的invoke方法。h是什么，发现是InvocationHandler。
-        * 这也就是为什么，我们的DynamicHandler类要实现发现是InvocationHandler接口，并重写它的invoke方法的原因了。
+        * 这也就是为什么，我们的DynamicHandler类要实现InvocationHandler接口，并重写它的invoke方法的原因了。
         **/
        public final void findHouse() throws  {
            try {
